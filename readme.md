@@ -3,6 +3,7 @@
 
 
 #使用方法
+```php
 $app->get('/', function () use ($app) {
     return $app->version();
 });
@@ -23,4 +24,5 @@ $app->get('/createTable',function () use($app){
 });
 
 $app->post('/api/problem', 'ProblemController@ProblemCommit');
+```
 
